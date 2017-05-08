@@ -47,17 +47,21 @@ $ git grep -i '#\\newline' | cut -d ':' -f 1 | sort | uniq | sed -Ee 's/^/- [ ] 
 おそらく、高レベルな部分(`dsrc/code/describe.lisp`とか上のレベルっぽい)は弄らなくていいはず。低レベルな部分はexternal-formatに関わるので、調査が必要。
 
 
-- [ ] ~~NEWS~~
-- [ ] contrib/sb-aclrepl/debug.lisp
-- [ ] contrib/sb-aclrepl/inspect.lisp
+- [-] ~~NEWS~~
+- [x] contrib/sb-aclrepl/debug.lisp
+    - AllegroCL的なREPLを実現
+    - 改行を出力(with `princ`)。不要。
+- [x] contrib/sb-aclrepl/inspect.lisp
+    - AllegroCL的なREPLを実現
+    - 改行を出力(with `princ`)。不要。
 - [ ] contrib/sb-aclrepl/repl.lisp
 - [ ] contrib/sb-cover/cover.lisp
 - [ ] contrib/sb-simple-streams/impl.lisp
 - [ ] contrib/sb-simple-streams/internal.lisp
 - [ ] contrib/sb-simple-streams/strategy.lisp
 - [ ] contrib/sb-simple-streams/terminal.lisp
-- [ ] ~~doc/GIT-FOR-SBCL-HACKERS.txt~~
-- [ ] ~~doc/manual/gray-streams-examples.texinfo~~
+- [-] ~~doc/GIT-FOR-SBCL-HACKERS.txt~~
+- [-] ~~doc/manual/gray-streams-examples.texinfo~~
 
     - 内部でさらにストリームを扱ってるので、external-formatの抽象化の上っぽい
 
